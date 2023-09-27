@@ -1,0 +1,18 @@
+{
+  "parser": "@typescript-eslint/parser",
+  // Ignore just for the webpack config that is picked by some IDEs
+  "ignorePatterns": ["/*", "!/src", "!/tests"],
+  "plugins": ["@typescript-eslint", "react-hooks", "prettier"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react-hooks/recommended",
+    "prettier"
+  ],
+  "rules": {
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "quotes": ["error", "double"],
+    "prettier/prettier": "error"
+  }
+}

@@ -1,0 +1,8 @@
+node_modules
+build
+test-results
+playwright-report
+tests/.auth
+.env
+.DS_Store
+SAMPLE.md
