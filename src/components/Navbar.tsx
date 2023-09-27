@@ -13,14 +13,14 @@ export const Navbar: FC = () => {
   const { logoutUser } = useUserLogin();
 
   return (
-    <nav className="flex items-center justify-between bg-gray md:px-56 px-3 w-full sticky top-0">
+    <nav className="flex items-center justify-between bg-gray md:px-56 px-2 w-full sticky top-0">
       <NavLink
         to="/articles"
         {...getDataUiNavElement(DataUiNavElement.Articles)}
         className="flex gap-8 items-center"
       >
         <IconLogo className="py-1 inline" />
-        <p className="text-gray-200 inline">Recent Articles</p>
+        <p className="text-gray-200 md:block hidden">Recent Articles</p>
       </NavLink>
       <div className="flex gap-10">
         {isLoggedIn ? (
